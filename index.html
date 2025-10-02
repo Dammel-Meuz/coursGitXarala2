@@ -1,18 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Dépôt Git</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff9800;
+    }
+
+    /* --- Menu Hamburger --- */
+    .menu-toggle {
+      display: none;
+      background: #444;
+      border: none;
+      color: white;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        display: none;
+        background: #333;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <h1>Mon depot git</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="page1.html">Page 1</a></li>
-            <li><a href="page2.html">Page 2</a></li>
-        </ul>
-    </nav>
+  <header>
+    <h1> Mon Dépôt Git</h1>
+  </header>
+
+  <nav>
+    <button class="menu-toggle">☰ Menu</button>
+    <ul id="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="page1.html">Page 1</a></li>
+      <li><a href="page2.html">Page 2</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <p>Bienvenue sur mon dépôt Git !</p>
+  </main>
+  </script>
 </body>
 </html>
